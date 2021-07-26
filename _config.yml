@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Happy afa
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: happy afa
+language: zh-CN
 timezone: ''
 
 # URL
@@ -44,12 +44,12 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  tab_replace: '    '
+  wrap: false
+  hljs: true
 prismjs:
   enable: false
   preprocess: true
@@ -97,7 +97,53 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: landfarz
+#Baidu Analytics**
+ba_track_id: 
+
+#Google Analytics
+ga_track_id: 
+ga_domain:
+
+comment_utteranc:
+  enable: true
+  repo: Haojen/myBlogRepo # Change to your blog repo
+comment_valine:
+  enable: true
+  appId:
+  appKey:
+# 1.light 
+# 2.dark
+# 3.auto (default, match device appearance setting)
+appearance: auto  
+ # main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archives: /archives
+widgets:
+- search
+- category
+- recent_posts
+- tag
+- tagcloud
+- links
+user:
+  name: 
+  avatar: /images/avatar.jpg
+  location:
+  description:
+  footnotes:
+
+# config you SNS
+social:
+  zhihu:
+  twitter:
+  facebook:
+  linkedin:
+  instagram:
+  github: haojen
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +151,20 @@ deploy:
   type: 'git'
   repository: git@github.com:happyafa/happyafa.github.io.git
   branch: master
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+  plugins:
+    - '@neilsustc/markdown-it-katex'
+  anchors:
+    level: 2
+    collisionSuffix: 't'
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ''
