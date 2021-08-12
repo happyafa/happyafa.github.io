@@ -1,7 +1,5 @@
 sudo: false
 language: node_js
-install:
-  - yarn
 node_js:
   - 14 # use nodejs v10 LTS
 cache: npm
